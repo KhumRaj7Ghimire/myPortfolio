@@ -32,6 +32,7 @@ $(document).ready(function () {
       $('.navbar').removeClass('solid');
     }
   });
+  AOS.init();
 });
 
 // Arrow Down Bounce
@@ -108,22 +109,22 @@ $(document).ready(function () {
   });
 });
 
-$(document).ready(function () {
-  $('.card')
-    .delay(1800)
-    .queue(function (next) {
-      $(this).removeClass('hover');
-      $('a.hover').removeClass('hover');
-      next();
-    });
-});
+// $(document).ready(function () {
+//   $('.card')
+//     .delay(1800)
+//     .queue(function (next) {
+//       $(this).removeClass('hover');
+//       $('a.hover').removeClass('hover');
+//       next();
+//     });
+// });
 
-$(document).ready(function () {
-  AOS.init({
-    // uncomment below for on-scroll animations to played only once
-    // once: true
-  }); // initialize animate on scroll library
-});
+// $(document).ready(function () {
+//   AOS.init({
+//     // uncomment below for on-scroll animations to played only once
+//     // once: true
+//   }); // initialize animate on scroll library
+// });
 
 // // Smooth scroll for links with hashes
 // $('#main-nav a').click(function (event) {
