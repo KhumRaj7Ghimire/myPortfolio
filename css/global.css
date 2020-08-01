@@ -1,0 +1,61 @@
+/* Title Text */
+.title-text {
+  font: normal bold 50px/52px var(--roboto);
+}
+
+.text-uppercase {
+  text-transform: uppercase;
+}
+.button {
+  padding: 0.8rem 2.2rem;
+  font: normal 600 16px/20px var(--roboto);
+  position: relative;
+  border: 2px solid transparent;
+  border-radius: 4px;
+}
+
+.button.primary-button {
+  background: var(--gradient-color);
+  background-clip: padding-box;
+  color: #141313;
+  transition: background 0.6s ease;
+  box-shadow: var(--box-shadow);
+}
+.button.primary-button:hover {
+  background: whitesmoke;
+  background-clip: padding-box;
+  /* border: 2px solid #1ebba3; */
+}
+.button.secondary-button {
+  background: white;
+  background-clip: padding-box;
+  color: #141313;
+  transition: background 0.6s ease;
+  box-shadow: var(--box-shadow);
+  /* border: 2px solid #1ebba3; */
+}
+.button.secondary-button:hover {
+  background: var(--gradient-color);
+  background-clip: padding-box;
+  box-shadow: var(--box-shadow);
+  color: white;
+}
+p.para {
+  color: var(--text-color);
+  font: normal 500 16px/25px var(--roboto);
+}
+.font-roboto {
+  font-family: var(--roboto);
+}
+.font-color {
+  color: var(--primary-color);
+  font-weight: bold;
+}
+.font-color-1 {
+  color: black;
+  font-weight: bolder;
+}
+
+.title-h1 {
+  font: normal bold 39px/40px var(--roboto);
+}
