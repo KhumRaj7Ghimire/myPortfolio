@@ -107,6 +107,22 @@ $(document).ready(function () {
       },
     },
   });
+  $('.testi3').owlCarousel({
+    loop: true,
+    margin: 30,
+    nav: true,
+    dots: true,
+    autoplay: true,
+    responsiveClass: true,
+    responsive: {
+      0: {
+        items: 1,
+      },
+      1024: {
+        items: 3,
+      },
+    },
+  });
 });
 
 // $(document).ready(function () {

@@ -377,10 +377,13 @@ body {
 
 /* get in touch section */
 #get-in-touch-section .card {
+  /* position: absolute; */
   /* background-color: whitesmoke; */
   background: var(--gradient-color);
   /* background-color: transparent; */
   opacity: 0.8;
+  /* margin: 0;
+  padding: 0; */
 }
 
 /* Project Section */
@@ -543,4 +546,120 @@ body {
   /* padding: 4rem 2rem; */
   /* margin-left: 20px !important; */
   background: #f5f5f5;
+}
+
+/* Testimonials */
+.testimonial3 {
+  /* font-family: 'Montserrat', sans-serif;
+  color: #8d97ad; */
+  font-weight: 300;
+}
+
+.testimonial3 h1,
+.testimonial3 h2,
+.testimonial3 h3,
+.testimonial3 h4,
+.testimonial3 h5,
+.testimonial3 h6 {
+  color: #3e4555;
+}
+
+.testimonial3 .font-weight-medium {
+  font-weight: 500;
+}
+
+/* .testimonial3 .bg-light {
+  background-color: #f4f8fa !important;
+}
+
+.testimonial3 .subtitle {
+  color: #8d97ad;
+  line-height: 24px;
+} */
+
+.testimonial3 .testi3 .card-body {
+  padding: 40px;
+}
+
+.testimonial3 .testi3 h6 {
+  line-height: 26px;
+}
+
+.testimonial3 .testi3 .thumb-img img {
+  width: 60px;
+}
+
+.testimonial3 .testi3 .customer {
+  text-transform: uppercase;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.testimonial3 .card.card-shadow {
+  -webkit-box-shadow: 0px 0px 30px rgba(115, 128, 157, 0.1);
+  box-shadow: 0px 0px 30px rgba(115, 128, 157, 0.1);
+}
+
+.testimonial3 .font-10 {
+  font-size: 10px;
+}
+
+.testimonial3 .text-success {
+  color: #2cdd9b !important;
+}
+
+/* .testimonial3 .text-muted {
+  color: #8d97ad !important;
+} */
+
+.testimonial3 .owl-theme .owl-dots .owl-dot.active span,
+.testimonial3 .owl-theme .owl-dots .owl-dot:hover span {
+  background: #316ce8;
+}
+
+.testimonial-name {
+  color: var(--primary-color) !important;
+}
+.testimonial-sign {
+  color: red;
+}
+
+/*** footer starts ***/
+
+#footer #logo {
+  background-color: var(--primary-color2);
+  border-radius: 50%;
+  color: #fff;
+  padding: 0.4em;
+  font-family: 'Maven pro', sans-serif;
+  font-size: 1.6em;
+  font-weight: 500;
+  display: inline;
+}
+
+#footer #copyright {
+  margin-top: 1.6em;
+  font-family: 'Maven pro', sans-serif;
+  font-weight: 500;
+  color: #7d7d7d;
+}
+
+#footer {
+  position: relative;
+  background-color: (var(--gradient-color));
+  /* margin: 0; */
+  /* padding: 0; */
+  /* background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed; */
+  /* min-height: 100vh; */
+}
+
+#footer .light-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  min-height: 100%;
+  background: rgba(68, 88, 220, 0.3);
 }
