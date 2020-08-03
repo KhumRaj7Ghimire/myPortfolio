@@ -33,17 +33,11 @@ $(document).ready(function () {
     }
   });
   AOS.init();
-});
-
-// Arrow Down Bounce
-$(document).ready(function () {
   $(window).scroll(function () {
     $('.arrow').css('opacity', 1 - $(window).scrollTop() / 250);
   });
-});
 
-// Close Mobile Nav On Click
-$(document).ready(function () {
+  // Close Mobile Nav On Click
   $(document).click(function (event) {
     var clickover = $(event.target);
     var _opened = $('.navbar-collapse').hasClass('show');
@@ -51,33 +45,8 @@ $(document).ready(function () {
       $('.navbar-toggler').click();
     }
   });
-});
 
-// Typed Cursor Animation
-// function typeAnimation() {
-//   Typed.new('#writing-text', {
-//     strings: [
-//       'am a Full-Stack Web Developer.',
-//       'love everything about code.',
-//       'also teach programming to people.',
-//       'solve problems.',
-//     ],
-//     // Optionally use an HTML element to grab strings from (must wrap each string in a <p>)
-//     stringsElement: null,
-//     // typing speed
-//     typeSpeed: 1,
-//     contentType: 'text',
-//     callback: function () {
-//       $('#writing-text').css({ color: '#fff', 'background-color': '#C8412B' });
-//     },
-//     preStringTyped: function () {},
-//     onStringTyped: function () {},
-//   });
-// }
-
-// Owl Carousel
-
-$(document).ready(function () {
+  // OWL_CAROUSEL
   $('.project-area .owl-carousel').owlCarousel({
     loop: true,
     autoplay: true,
@@ -113,6 +82,30 @@ $(document).ready(function () {
     },
   });
 });
+
+// Typed Cursor Animation
+// function typeAnimation() {
+//   Typed.new('#writing-text', {
+//     strings: [
+//       'am a Full-Stack Web Developer.',
+//       'love everything about code.',
+//       'also teach programming to people.',
+//       'solve problems.',
+//     ],
+//     // Optionally use an HTML element to grab strings from (must wrap each string in a <p>)
+//     stringsElement: null,
+//     // typing speed
+//     typeSpeed: 1,
+//     contentType: 'text',
+//     callback: function () {
+//       $('#writing-text').css({ color: '#fff', 'background-color': '#C8412B' });
+//     },
+//     preStringTyped: function () {},
+//     onStringTyped: function () {},
+//   });
+// }
+
+// Owl Carousel
 
 // $(document).ready(function () {
 //   $('.card')
