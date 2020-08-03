@@ -1,10 +1,11 @@
 // Init Scrollspy
 $('body').scrollspy({ target: '#main-nav' });
+$('#year').text(new Date().getFullYear());
 
 // NAVBAR TRANSSPARENT TO SOLID
 $(document).ready(function () {
+  AOS.init();
   // Get the current year for the copyright
-  $('#year').text(new Date().getFullYear());
   $(window).scroll(function () {
     if ($(this).scrollTop() > 100) {
       $('.navbar').addClass('solid');
@@ -12,7 +13,6 @@ $(document).ready(function () {
       $('.navbar').removeClass('solid');
     }
   });
-  AOS.init();
   $(window).scroll(function () {
     $('.arrow').css('opacity', 1 - $(window).scrollTop() / 250);
   });
