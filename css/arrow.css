@@ -16,7 +16,7 @@
 }
 a.down-arrow {
   display: block;
-  color: #fff; /*arrow color*/
+  color: var(--primary-color); /*arrow color*/
 }
 .down-arrow svg.svg-inline--fa {
   opacity: 0.3; /*arrow opacity*/
