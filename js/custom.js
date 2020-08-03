@@ -4,6 +4,25 @@ $('#year').text(new Date().getFullYear());
 // Init Scrollspy
 $('body').scrollspy({ target: '#main-nav' });
 
+// // Smooth Scrolling
+// $('#main-nav a').on('click', function (event) {
+//   if (this.hash !== '') {
+//     event.preventDefault();
+
+//     const hash = this.hash;
+
+//     $('html, body').animate(
+//       {
+//         scrollTop: $(hash).offset().top,
+//       },
+//       800,
+//       function () {
+//         window.location.hash = hash;
+//       }
+//     );
+//   }
+// });
+
 // NAVBAR TRANSSPARENT TO SOLID
 $(document).ready(function () {
   $(window).scroll(function () {
@@ -14,11 +33,17 @@ $(document).ready(function () {
     }
   });
   AOS.init();
+});
+
+// Arrow Down Bounce
+$(document).ready(function () {
   $(window).scroll(function () {
     $('.arrow').css('opacity', 1 - $(window).scrollTop() / 250);
   });
+});
 
-  // Close Mobile Nav On Click
+// Close Mobile Nav On Click
+$(document).ready(function () {
   $(document).click(function (event) {
     var clickover = $(event.target);
     var _opened = $('.navbar-collapse').hasClass('show');
@@ -26,8 +51,33 @@ $(document).ready(function () {
       $('.navbar-toggler').click();
     }
   });
+});
 
-  // OWL_CAROUSEL
+// Typed Cursor Animation
+// function typeAnimation() {
+//   Typed.new('#writing-text', {
+//     strings: [
+//       'am a Full-Stack Web Developer.',
+//       'love everything about code.',
+//       'also teach programming to people.',
+//       'solve problems.',
+//     ],
+//     // Optionally use an HTML element to grab strings from (must wrap each string in a <p>)
+//     stringsElement: null,
+//     // typing speed
+//     typeSpeed: 1,
+//     contentType: 'text',
+//     callback: function () {
+//       $('#writing-text').css({ color: '#fff', 'background-color': '#C8412B' });
+//     },
+//     preStringTyped: function () {},
+//     onStringTyped: function () {},
+//   });
+// }
+
+// Owl Carousel
+
+$(document).ready(function () {
   $('.project-area .owl-carousel').owlCarousel({
     loop: true,
     autoplay: true,
@@ -63,30 +113,6 @@ $(document).ready(function () {
     },
   });
 });
-
-// Typed Cursor Animation
-// function typeAnimation() {
-//   Typed.new('#writing-text', {
-//     strings: [
-//       'am a Full-Stack Web Developer.',
-//       'love everything about code.',
-//       'also teach programming to people.',
-//       'solve problems.',
-//     ],
-//     // Optionally use an HTML element to grab strings from (must wrap each string in a <p>)
-//     stringsElement: null,
-//     // typing speed
-//     typeSpeed: 1,
-//     contentType: 'text',
-//     callback: function () {
-//       $('#writing-text').css({ color: '#fff', 'background-color': '#C8412B' });
-//     },
-//     preStringTyped: function () {},
-//     onStringTyped: function () {},
-//   });
-// }
-
-// Owl Carousel
 
 // $(document).ready(function () {
 //   $('.card')
