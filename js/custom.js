@@ -78,18 +78,7 @@ $(document).ready(function () {
 // Owl Carousel
 
 $(document).ready(function () {
-  $('.site-main .project-area .owl-carousel').owlCarousel({
-    // loop: true,
-    // autoplay: true,
-    // dots: true,
-    // responsive: {
-    //   0: {
-    //     items: 1,
-    //   },
-    //   544: {
-    //     items: 2,
-    //   },
-    // },
+  $('.project-area .owl-carousel').owlCarousel({
     loop: true,
     autoplay: true,
     dots: true,
@@ -107,13 +96,13 @@ $(document).ready(function () {
       },
     },
   });
-  $('.testi3').owlCarousel({
+  $('.reference-area .owl-carousel').owlCarousel({
     loop: true,
     margin: 30,
     nav: true,
     dots: true,
     autoplay: true,
-    responsiveClass: true,
+    // responsiveClass: true,
     responsive: {
       0: {
         items: 1,
