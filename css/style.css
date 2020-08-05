@@ -19,12 +19,12 @@ body {
 }
 
 /* Nav Scrolling Offset */
-.offset:before {
+/* .offset:before {
   height: 8rem;
   margin-top: -8rem;
   content: '';
   display: block;
-}
+} */
 
 /* ======== Navigation ======== */
 
@@ -68,7 +68,7 @@ body {
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed;
-  min-height: 100vh;
+  min-height: 650px;
 }
 
 #home-section .dark-overlay {
@@ -76,7 +76,7 @@ body {
   top: 0;
   left: 0;
   width: 100%;
-  min-height: 100vh;
+  min-height: 650px;
   background: rgba(255, 255, 255, 0.6);
 }
 
@@ -169,7 +169,7 @@ body {
 
 .caption h1 {
   color: #141313;
-  font-size: 3.5rem;
+  font-size: 2.8rem;
   text-shadow: 0.1rem 0.1rem 0.1rem white;
   margin: 0;
   padding: 0;
@@ -202,7 +202,7 @@ body {
 /* h2 */
 .caption h2 {
   color: #141313;
-  font-size: 2rem;
+  font-size: 1.5rem;
   text-shadow: 0.1rem 0.1rem 0.5rem white;
   margin: 0;
   padding: 0;
@@ -230,21 +230,21 @@ body {
 }
 .caption h2::before {
   content: '';
-  height: 3.5px;
-  width: 10vw;
+  height: 2.5px;
+  width: 8vw;
   background: var(--primary-color);
   display: inline-block;
   margin-right: 2%;
-  transform: translateY(-10px);
+  transform: translateY(-6px);
 }
 .caption h2::after {
   content: '';
-  height: 3.5px;
-  width: 10vw;
+  height: 2.5px;
+  width: 8vw;
   background: var(--primary-color);
   display: inline-block;
   margin-left: 2%;
-  transform: translateY(-10px);
+  transform: translateY(-6px);
 }
 .caption h4 {
   color: #141313;
@@ -663,4 +663,371 @@ body {
   width: 100%;
   min-height: 100%;
   background: rgba(68, 88, 220, 0.3);
+}
+
+/* Responsive */
+
+/* BOOTSTRAP BREAK POINTS: */
+
+/* Extra small (xs) devices (portrait phones, less than 576px) */
+/* No media query since this is the default in Bootstrap */
+
+/* Small (sm) devices (landscape phones, 576px and up) */
+@media (min-width: 576px) {
+  .caption h1 {
+    color: #141313;
+    font-size: 3.5rem;
+    text-shadow: 0.1rem 0.1rem 0.1rem white;
+    margin: 0;
+    padding: 0;
+  }
+  .caption h5 {
+    color: whitesmoke;
+    font-size: 2rem;
+    text-shadow: 0.1rem 0.1rem 0.5rem black;
+    margin: 0;
+    padding: 0;
+  }
+  .caption h5::before {
+    content: '';
+    height: 3.5px;
+    width: 10vw;
+    background: var(--primary-color);
+    display: inline-block;
+    margin-right: 2%;
+    transform: translateY(-10px);
+  }
+  .caption h5::after {
+    content: '';
+    height: 3.5px;
+    width: 10vw;
+    background: var(--primary-color);
+    display: inline-block;
+    margin-left: 2%;
+    transform: translateY(-10px);
+  }
+  /* h2 */
+  .caption h2 {
+    color: #141313;
+    font-size: 2rem;
+    text-shadow: 0.1rem 0.1rem 0.5rem white;
+    margin: 0;
+    padding: 0;
+  }
+  .caption1 h2 {
+    color: var(--title-color);
+    font-size: 2rem;
+    /* text-shadow: 0.1rem 0.1rem 0.5rem var(--primary-color); */
+    margin: 0;
+    padding: 0;
+  }
+  .caption1 p {
+    color: black;
+    font-size: 1.1rem;
+    /* text-shadow: 0.1rem 0.1rem 0.5rem var(--primary-color); */
+    margin: 0;
+    padding: 0;
+  }
+  .caption h3 {
+    color: #141313;
+    font-size: 1.5rem;
+    text-shadow: 0.1rem 0.1rem 0.5rem white;
+    margin: 0;
+    padding: 0;
+  }
+  .caption h2::before {
+    content: '';
+    height: 3.5px;
+    width: 10vw;
+    background: var(--primary-color);
+    display: inline-block;
+    margin-right: 2%;
+    transform: translateY(-10px);
+  }
+  .caption h2::after {
+    content: '';
+    height: 3.5px;
+    width: 10vw;
+    background: var(--primary-color);
+    display: inline-block;
+    margin-left: 2%;
+    transform: translateY(-10px);
+  }
+  .caption h4 {
+    color: #141313;
+    font-size: 1.3rem;
+    text-shadow: 0.1rem 0.1rem 0.5rem white;
+    margin: 0;
+    padding: 0;
+  }
+}
+
+/* Medium (md) devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+  .caption h1 {
+    color: #141313;
+    font-size: 3.5rem;
+    text-shadow: 0.1rem 0.1rem 0.1rem white;
+    margin: 0;
+    padding: 0;
+  }
+  .caption h5 {
+    color: whitesmoke;
+    font-size: 2rem;
+    text-shadow: 0.1rem 0.1rem 0.5rem black;
+    margin: 0;
+    padding: 0;
+  }
+  .caption h5::before {
+    content: '';
+    height: 3.5px;
+    width: 10vw;
+    background: var(--primary-color);
+    display: inline-block;
+    margin-right: 2%;
+    transform: translateY(-10px);
+  }
+  .caption h5::after {
+    content: '';
+    height: 3.5px;
+    width: 10vw;
+    background: var(--primary-color);
+    display: inline-block;
+    margin-left: 2%;
+    transform: translateY(-10px);
+  }
+  /* h2 */
+  .caption h2 {
+    color: #141313;
+    font-size: 2rem;
+    text-shadow: 0.1rem 0.1rem 0.5rem white;
+    margin: 0;
+    padding: 0;
+  }
+  .caption1 h2 {
+    color: var(--title-color);
+    font-size: 2rem;
+    /* text-shadow: 0.1rem 0.1rem 0.5rem var(--primary-color); */
+    margin: 0;
+    padding: 0;
+  }
+  .caption1 p {
+    color: black;
+    font-size: 1.1rem;
+    /* text-shadow: 0.1rem 0.1rem 0.5rem var(--primary-color); */
+    margin: 0;
+    padding: 0;
+  }
+  .caption h3 {
+    color: #141313;
+    font-size: 1.5rem;
+    text-shadow: 0.1rem 0.1rem 0.5rem white;
+    margin: 0;
+    padding: 0;
+  }
+  .caption h2::before {
+    content: '';
+    height: 3.5px;
+    width: 10vw;
+    background: var(--primary-color);
+    display: inline-block;
+    margin-right: 2%;
+    transform: translateY(-10px);
+  }
+  .caption h2::after {
+    content: '';
+    height: 3.5px;
+    width: 10vw;
+    background: var(--primary-color);
+    display: inline-block;
+    margin-left: 2%;
+    transform: translateY(-10px);
+  }
+  .caption h4 {
+    color: #141313;
+    font-size: 1.3rem;
+    text-shadow: 0.1rem 0.1rem 0.5rem white;
+    margin: 0;
+    padding: 0;
+  }
+}
+
+/* Large (lg) devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+  .caption h1 {
+    color: #141313;
+    font-size: 3.5rem;
+    text-shadow: 0.1rem 0.1rem 0.1rem white;
+    margin: 0;
+    padding: 0;
+  }
+  .caption h5 {
+    color: whitesmoke;
+    font-size: 2rem;
+    text-shadow: 0.1rem 0.1rem 0.5rem black;
+    margin: 0;
+    padding: 0;
+  }
+  .caption h5::before {
+    content: '';
+    height: 3.5px;
+    width: 10vw;
+    background: var(--primary-color);
+    display: inline-block;
+    margin-right: 2%;
+    transform: translateY(-10px);
+  }
+  .caption h5::after {
+    content: '';
+    height: 3.5px;
+    width: 10vw;
+    background: var(--primary-color);
+    display: inline-block;
+    margin-left: 2%;
+    transform: translateY(-10px);
+  }
+  /* h2 */
+  .caption h2 {
+    color: #141313;
+    font-size: 2rem;
+    text-shadow: 0.1rem 0.1rem 0.5rem white;
+    margin: 0;
+    padding: 0;
+  }
+  .caption1 h2 {
+    color: var(--title-color);
+    font-size: 2rem;
+    /* text-shadow: 0.1rem 0.1rem 0.5rem var(--primary-color); */
+    margin: 0;
+    padding: 0;
+  }
+  .caption1 p {
+    color: black;
+    font-size: 1.1rem;
+    /* text-shadow: 0.1rem 0.1rem 0.5rem var(--primary-color); */
+    margin: 0;
+    padding: 0;
+  }
+  .caption h3 {
+    color: #141313;
+    font-size: 1.5rem;
+    text-shadow: 0.1rem 0.1rem 0.5rem white;
+    margin: 0;
+    padding: 0;
+  }
+  .caption h2::before {
+    content: '';
+    height: 3.5px;
+    width: 10vw;
+    background: var(--primary-color);
+    display: inline-block;
+    margin-right: 2%;
+    transform: translateY(-10px);
+  }
+  .caption h2::after {
+    content: '';
+    height: 3.5px;
+    width: 10vw;
+    background: var(--primary-color);
+    display: inline-block;
+    margin-left: 2%;
+    transform: translateY(-10px);
+  }
+  .caption h4 {
+    color: #141313;
+    font-size: 1.3rem;
+    text-shadow: 0.1rem 0.1rem 0.5rem white;
+    margin: 0;
+    padding: 0;
+  }
+}
+
+/* Extra (xl) large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+  .caption h1 {
+    color: #141313;
+    font-size: 3.5rem;
+    text-shadow: 0.1rem 0.1rem 0.1rem white;
+    margin: 0;
+    padding: 0;
+  }
+  .caption h5 {
+    color: whitesmoke;
+    font-size: 2rem;
+    text-shadow: 0.1rem 0.1rem 0.5rem black;
+    margin: 0;
+    padding: 0;
+  }
+  .caption h5::before {
+    content: '';
+    height: 3.5px;
+    width: 10vw;
+    background: var(--primary-color);
+    display: inline-block;
+    margin-right: 2%;
+    transform: translateY(-10px);
+  }
+  .caption h5::after {
+    content: '';
+    height: 3.5px;
+    width: 10vw;
+    background: var(--primary-color);
+    display: inline-block;
+    margin-left: 2%;
+    transform: translateY(-10px);
+  }
+  /* h2 */
+  .caption h2 {
+    color: #141313;
+    font-size: 2rem;
+    text-shadow: 0.1rem 0.1rem 0.5rem white;
+    margin: 0;
+    padding: 0;
+  }
+  .caption1 h2 {
+    color: var(--title-color);
+    font-size: 2rem;
+    /* text-shadow: 0.1rem 0.1rem 0.5rem var(--primary-color); */
+    margin: 0;
+    padding: 0;
+  }
+  .caption1 p {
+    color: black;
+    font-size: 1.1rem;
+    /* text-shadow: 0.1rem 0.1rem 0.5rem var(--primary-color); */
+    margin: 0;
+    padding: 0;
+  }
+  .caption h3 {
+    color: #141313;
+    font-size: 1.5rem;
+    text-shadow: 0.1rem 0.1rem 0.5rem white;
+    margin: 0;
+    padding: 0;
+  }
+  .caption h2::before {
+    content: '';
+    height: 3.5px;
+    width: 10vw;
+    background: var(--primary-color);
+    display: inline-block;
+    margin-right: 2%;
+    transform: translateY(-10px);
+  }
+  .caption h2::after {
+    content: '';
+    height: 3.5px;
+    width: 10vw;
+    background: var(--primary-color);
+    display: inline-block;
+    margin-left: 2%;
+    transform: translateY(-10px);
+  }
+  .caption h4 {
+    color: #141313;
+    font-size: 1.3rem;
+    text-shadow: 0.1rem 0.1rem 0.5rem white;
+    margin: 0;
+    padding: 0;
+  }
 }

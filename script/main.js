@@ -47,20 +47,51 @@ $(document).ready(function () {
   });
   $('.reference-area .owl-carousel').owlCarousel({
     loop: true,
+    autoplay: true,
+    dots: true,
     margin: 30,
     nav: true,
-    dots: true,
-    autoplay: true,
     // responsiveClass: true,
     responsive: {
       0: {
         items: 1,
       },
-      1024: {
-        items: 3,
+      576: {
+        items: 1,
+      },
+      768: {
+        items: 2,
+      },
+      992: {
+        items: 2,
+      },
+      1200: {
+        items: 2,
       },
     },
   });
+  // $('.test .owl-carousel').owlCarousel({
+  //   loop: true,
+  //   autoplay: true,
+  //   dots: true,
+  //   margin: 30,
+  //   nav: true,
+  //   // responsiveClass: true,
+  //   responsive: {
+  //     576: {
+  //       items: 1,
+  //     },
+  //     768: {
+  //       items: 2,
+  //     },
+  //     992: {
+  //       items: 2,
+  //     },
+  //     1200: {
+  //       items: 2,
+  //     },
+  //   },
+  // });
 });
 
 // $(document).ready(function () {
